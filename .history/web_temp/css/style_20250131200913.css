@@ -5,32 +5,11 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
-.menu-text {
+ .menu-text {
   font-size: 1.5rem;   /* Similar to heading font size */
   font-weight: bold;   /* Bold text like a heading */
   cursor: pointer;    /* Makes it clickable */
-  color: #343a40;
-}
-/* Full page container using grid */
-.container {
-  display: grid;
-  place-items: center; /* Centers content both vertically and horizontally */
-  /* height: 100vh; Full viewport height */
-}
-
-/* Content wrapper for text and image */
-.content {
-  display: grid;
-  grid-template-columns: auto 400px; /* Creates two columns, one for text and one for the image */
-  gap: 20px; /* Adds space between the text and the image */
-  align-items: center; /* Vertically align text and image */
-}
-
-/* Image styling */
-img {
-  width: 150%; /* Makes image responsive */
-  max-width: 400px; /* Limits the image width */
-  height: auto;
+  color: #343a40
 }
 
 :root {

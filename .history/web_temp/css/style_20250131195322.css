@@ -4,35 +4,6 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-
-.menu-text {
-  font-size: 1.5rem;   /* Similar to heading font size */
-  font-weight: bold;   /* Bold text like a heading */
-  cursor: pointer;    /* Makes it clickable */
-  color: #343a40;
-}
-/* Full page container using grid */
-.container {
-  display: grid;
-  place-items: center; /* Centers content both vertically and horizontally */
-  /* height: 100vh; Full viewport height */
-}
-
-/* Content wrapper for text and image */
-.content {
-  display: grid;
-  grid-template-columns: auto 400px; /* Creates two columns, one for text and one for the image */
-  gap: 20px; /* Adds space between the text and the image */
-  align-items: center; /* Vertically align text and image */
-}
-
-/* Image styling */
-img {
-  width: 150%; /* Makes image responsive */
-  max-width: 400px; /* Limits the image width */
-  height: auto;
-}
-
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -226,8 +197,6 @@ button {
 button:focus {
   outline: 1px dotted;
   outline: 5px auto -webkit-focus-ring-color; }
-
-  
 
 input,
 button,
@@ -5445,7 +5414,6 @@ button.bg-dark:hover,
 button.bg-dark:focus {
   background-color: #1d2124 !important; }
 
-
 .bg-white {
   background-color: #fff !important; }
 
@@ -8320,5 +8288,4 @@ a[data-toggle="collapse"] {
 
 .footer p {
   color: rgba(255, 255, 255, 0.5);
-  font-size: 0.8rem;
-}
+ }
