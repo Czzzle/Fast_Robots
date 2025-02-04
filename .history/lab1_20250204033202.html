@@ -248,7 +248,7 @@
       
        <h4 style="padding-top: 10px;"> Task 3. GET_TIME_MILLIS </h4>
       <p>
-        This command retrieves the current time in milliseconds. In the Arduino code, I used millis() to get millis_time as an unsigned long. Since tx_estring_value.append() does not accept unsigned long data, I converted it to an int before sending it back to the computer.
+        This command retrieves the current time in milliseconds. In the Arduino code, I used millis() to get millis_time as an unsigned long. Since tx_estring_value.append() does not accept unsigned long data, I converted it to an int before sending it back to the computer."
       </p>
       <p>On Arduino side:</p>
       <script src="https://gist.github.com/Czzzle/6a1ca0c9be383f026e85689a730087d6.js"></script>
@@ -258,7 +258,7 @@
        <h4 style="padding-top: 10px;"> Task 4. Notification Handler </h4>
       <p>
         According to the table in demo.ipynb under section BLE, notification_handler is a function callback for start_notify(). 
-        It must accept a uuid string object and a bytearray of the characteristic value. Inside the handler function, I first converted the byte_array into a string, then extracted the milliseconds value or kept the pure string. The Python implementation and results are as below.
+        It must accept a uuid string object and a bytearray of the characteristic value. Inside the handler function, I first converted the byte_array into a string, then extracted the milliseconds value or kept the pure string. The Python implementation and results are as below
       </p>
       <img src="web_temp/images/Lab1/task4.png" alt="Task 4" style="width: 900px; height: auto;display: block; margin: auto; max-width: 150%">
       

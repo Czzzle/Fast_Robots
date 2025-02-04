@@ -173,7 +173,7 @@
        <h4 style="padding-top: 10px;"> Example4_Serial </h4>
       <p>
         Next, I ran the example program to test serial communication. It is important that the baud rate in
-         both the Arduino code and the serial monitor match, otherwise strange characters may appear. I set both to 115200. 
+         both the Arduino code and the serial monitor match, other strange characters may appear. I set both to 115200. 
          The program first printed 11 messages, then prompted for user input. After typing words in the input window, 
         the program read and echoed them in the output window, as shown in the video.
       </p>
@@ -207,7 +207,7 @@
       <p>
         Before Lab 1B, we needed to set up Python, a virtual environment, necessary packages, and download the lab's codebase. I encountered some issues when upgrading Python.
          The proper procedure is to first uninstall the old version from Settings -> Apps, then install the latest version. Installing the new Python version automatically upgrades pip.
-          It's important to use the Command Line Interface (CLI) to check the version, as git bash and PowerShell may provide incorrect outputs. Since I previously used the Anaconda environment, both git bash and PowerShell showed the wrong Python version.
+          It's important to use the Command Line Interface (CLI) to check the version, as git bash and PowerShell may provide incorrect outputs. Since I previously used the Anaconda environment, both git bash and PowerShell showed the wrong Python version
       </p>
       <p>
         Next, we set up the Artemis Board by installing the ArduinoBLE library and uploading the ble_arduino.ino script. After matching the baud rate in the script and the Serial Monitor, I successfully received the MAC address.
@@ -222,7 +222,7 @@
       <P>The updated connections.yaml and ble_arduino.ino are shown in figure below. </P>
       <img src="web_temp/images/Lab1/config.png" alt="Configuration" style="width: 900px; height: auto;display: block; margin: auto; max-width: 150%">
       
-      <P>Afterward, I re-uploaded the Arduino code and ran the cells in demo.ipynb. Since we are using laptop Bluetooth, it's important to ensure that Bluetooth is enabled.</P>
+      <P>Afterward, I re-uploaded the Arduino code and ran the cells in demo.ipynb. Since we are using laptop Bluetooth, it's important to ensure that Bluetooth is enabled, or else you may encounter errors.</P>
       <img src="web_temp/images/Lab1/BLEconnect.png" alt="BLE connection" style="width: 900px; height: auto;display: block; margin: auto; max-width: 150%">
       
        <h4 style="padding-top: 10px;"> Task 1. ECHO </h4>
@@ -248,7 +248,7 @@
       
        <h4 style="padding-top: 10px;"> Task 3. GET_TIME_MILLIS </h4>
       <p>
-        This command retrieves the current time in milliseconds. In the Arduino code, I used millis() to get millis_time as an unsigned long. Since tx_estring_value.append() does not accept unsigned long data, I converted it to an int before sending it back to the computer.
+        This command retrieves the current time in milliseconds. In the Arduino code, I used millis() to get millis_time as an unsigned long. Since tx_estring_value.append() does not accept unsigned long data, I converted it to an int before sending it back to the computer."
       </p>
       <p>On Arduino side:</p>
       <script src="https://gist.github.com/Czzzle/6a1ca0c9be383f026e85689a730087d6.js"></script>
@@ -258,7 +258,7 @@
        <h4 style="padding-top: 10px;"> Task 4. Notification Handler </h4>
       <p>
         According to the table in demo.ipynb under section BLE, notification_handler is a function callback for start_notify(). 
-        It must accept a uuid string object and a bytearray of the characteristic value. Inside the handler function, I first converted the byte_array into a string, then extracted the milliseconds value or kept the pure string. The Python implementation and results are as below.
+        It must accept a uuid string object and a bytearray of the characteristic value. Inside the handler function, I first converted the byte_array into a string, then extracted the milliseconds value or kept the pure string. The Python implementation and results are as below
       </p>
       <img src="web_temp/images/Lab1/task4.png" alt="Task 4" style="width: 900px; height: auto;display: block; margin: auto; max-width: 150%">
       
