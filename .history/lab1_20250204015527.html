@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Fast Robots - Chengle Zheng </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="web_temp/css/style.css">
+</head>
+
+<body>
+
+  <div class="wrapper d-flex align-items-stretch">
+    <nav id="sidebar">
+      <div class="p-4 pt-5">
+        <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(web_temp/images/mine1.jpg);"></a>
+        <ul class="list-unstyled components mb-5">
+          <li class="active">
+            <!-- <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+            <ul class="collapse list-unstyled" id="homeSubmenu">
+              <li>
+                <a href="#">Home 1</a>
+              </li>
+              <li>
+                <a href="#">Home 2</a>
+              </li>
+              <li>
+                <a href="#">Home 3</a>
+              </li>
+            </ul> -->
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="About.html">About</a>
+          </li>
+          <!-- <li>
+            <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+            <ul class="collapse list-unstyled" id="pageSubmenu">
+              <li>
+                <a href="#">Page 1</a>
+              </li>
+              <li>
+                <a href="#">Page 2</a>
+              </li>
+              <li>
+                <a href="#">Page 3</a>
+              </li>
+            </ul>
+          </li> -->
+          <li>
+            <a href="lab1.html">Lab 1</a>
+          </li>
+          <li>
+            <a href="#">Lab 2</a>
+          </li>
+          <li>
+            <a href="#">Lab 3</a>
+          </li>
+          <li>
+            <a href="#">Lab 4</a>
+          </li>
+          <li>
+            <a href="#">Lab 5</a>
+          </li>
+          <li>
+            <a href="#">Lab 6</a>
+          </li>
+          <li>
+            <a href="#">Lab 7</a>
+          </li>
+          <li>
+            <a href="#">Lab 8</a>
+          </li>
+          <li>
+            <a href="#">Lab 9</a>
+          </li>
+          <li>
+            <a href="#">Lab 10</a>
+          </li>
+          <li>
+            <a href="#">Lab 11</a>
+          </li>
+          <li>
+            <a href="#">Lab 12</a>
+          </li>
+        </ul>
+
+        <div class="footer">
+          <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;
+            Chengle Zheng
+            <script>document.write(new Date().getFullYear());</script>
+          </p>
+          <p>This template is made with
+            <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com"
+              target="_blank">Colorlib.com</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </p>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content" class="p-4 p-md-5">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+          <!-- <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            Fast Robots
+            <span class="sr-only">Toggle Menu</span>
+          </button> -->
+
+          <span id="sidebarCollapse" class="menu-text">Fast Robots</span>
+
+          <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- Paragraph Starts ! -->
+      <h1 class="mb-4">Lab 1: Artemis Board & Blutooth</h1>
+      <h4> Introduction </h4>
+      <p>The first part of this lab was to set up 
+        and familiarize ourselves with the Arduino IDE and Artemis board. It involved running sample scripts about Serial Monitor, temperature sensors, and microphone. The second part was to establish Bluetooth communication between our laptops and the Artemis board. The laptop would send Python commands from Jupyter notebook 
+        to an Artemis board running in Arduino.</p>
+      
+      <h2> Lab 1a </h2>
+      <h4> Prelab </h4>
+      <p>
+        Before the lab, I installed the latest version of Arduino IDE (2.3.4) and Sparkfun Apollo 3 
+        Boards (2.2.1) in Board Manager.
+      </p>
+      <h4> Blink </h4>
+      <p>
+        Similar to how "Hello World" is the first program run in many programming languages, the Blink LED example is often the first script executed on a microcontroller.
+         After running the Blink.ino script, the LED on the board blinked as expected.
+      </p>
+      <h4> Example4_Serial </h4>
+      <p>
+        Next, I ran the example program to test serial communication. It is important that the baud rate in
+         both the Arduino code and the serial monitor match, or else strange characters may appear. I set both to 115200. 
+         The program first printed 11 messages, then prompted for user input. After typing words in the input window, 
+        the program read and echoed them in the output window, as shown in the video.
+      </p>
+      <h4> Example2_analogRead </h4>
+      <p>
+        Next, I ran the example program to test the temperature sensor. The program used the internal ADC and the analogRead
+        function to read data from the onboard temperature sensor. When I touched the board, the temperature displayed on the serial monitor increased.
+      </p>
+      <h4> Example1_MicrophoneOutput  </h4>
+      <p>
+        The final sample script demonstrated how to use the pulse density microphone on the board. The program output the sound frequency. 
+        The video below shows the audio frequency output for different input sound frequencies 
+      </p>
+      <h4> Musical C Note Control Blink</h4>
+      <p>
+        The task was to control the LED blink based on a musical C note. When the microphone detects a C note, the LED should blink; otherwise, it remains off.
+         I first used a YouTube video containing a single C note to test the frequency, which should be 263 Hz. 
+        Then, I added an if statement to the end of the printLoudest() function to control the LED blink. When the C note is detected, the LED blinks at 1 Hz.
+      </p>
+
+
+      <h2> Lab 1b </h2>
+    
+      <h4> Prelab </h4>
+      <p>
+        Before Lab 1B, we needed to set up Python, a virtual environment, necessary packages, and download the lab's codebase. I encountered some issues when upgrading Python.
+         The proper procedure is to first uninstall the old version from Settings -> Apps, then install the latest version. Installing the new Python version automatically upgrades pip.
+          It's important to use the Command Line Interface (CLI) to check the version, as git bash and PowerShell may provide incorrect outputs. Since I previously used the Anaconda environment, both git bash and PowerShell showed the wrong Python version
+      </p>
+      <p>
+        Next, we set up the Artemis Board by installing the ArduinoBLE library and uploading the ble_arduino.ino script. After matching the baud rate in the script and the Serial Monitor, I successfully received the MAC address.
+      </p>
+      <img src="web_temp/images/Lab1/MAC.png" alt="MAC address">
+      <h4> Configuration </h4>
+      <p>
+        To establish a Bluetooth connection, I replaced the artemis_address value with the MAC address printed by the Artemis board during the prelab. To generate a unique ID for differentiating each student's data, 
+        I ran two lines of code in a new Python file and updated the UUID in both ble_arduino.ino and connections.yaml with the returned value.
+      </p>
+      <P>The updated connections.yaml and ble_arduino.ino are shown in figure below. </P>
+      <img src="web_temp/images/Lab1/config.png" alt="Configuration">
+      
+      <P>Afterward, I re-uploaded the Arduino code and ran the cells in demo.ipynb. Since we are using laptop Bluetooth, it's important to ensure that Bluetooth is enabled, or else you may encounter errors.</P>
+      <img src="web_temp/images/Lab1/BLEconnect.png" alt="BLE connection">
+      
+      <h4> Task 1. ECHO </h4>
+      <p>
+        This task is to implement the handler for command ECHO in handle_command() in ble_arduino.ino.
+         Whenever users send this command with a string from the PC to the Artemis board, the PC should receive the augmented string “Robot says -> ... :)”,
+         where “...” is the original string. 
+      </p>
+      <P>The Arduino code is as below. Also, every time we implement a new command, we need to add the command name in cmd_types.py and CommandTypes in Arduino code.</P>
+
+      <p>The Python output is</p>
+      <img src="web_temp/images/Lab1/echo.png" alt="ECHO">
+      
+      <h4> Task 2. SEND_THREE_FLOATS </h4>
+      <p>
+        This command is similar to the SEND_TWO_INTS command. In Arduino code, I extracted three floats one by one using get_next_value(float_a) and printed them out using Serial.print(). 
+      </p>
+      <p>The Arduino code and the output in Serial Monitor are as below.
+      </p>
+      <img src="web_temp/images/Lab1/3float.png" alt="3float">
+      <img src="web_temp/images/Lab1/3float_output.png" alt="3float_output">
+      
+      <h4> Task 3. GET_TIME_MILLIS </h4>
+      <p>
+        This command retrieves the current time in milliseconds. In the Arduino code, I used millis() to get millis_time as an unsigned long. Since tx_estring_value.append() does not accept unsigned long data, I converted it to an int before sending it back to the computer."
+      </p>
+      <p>On Arduino side:</p>
+      <p>On Python side:</p>
+      <img src="web_temp/images/Lab1/task3.png" alt="GET_TIME_MILLIS">
+      
+      <h4> Task 4. Notification Handler </h4>
+      <p>
+        According to the table in demo.ipynb under section BLE, notification_handler is a function callback for start_notify(). 
+        It must accept a uuid string object and a bytearray of the characteristic value. Inside the handler function, I first converted the byte_array into a string, then extracted the milliseconds value or kept the pure string. The Python implementation and results are as below
+      </p>
+      <img src="web_temp/images/Lab1/task4.png" alt="Task 4">
+      
+      <h4> Task 5. GET_TIME_MILLIS in a loop </h4>
+      <p>
+        To send the current time for a few seconds, I implemented a new command, GET_TIME_MILLIS_LOOP. When the PC sends this command, the board collects the current time and immediately sends it to the PC for 5 seconds. Additionally, the notification handler was updated to record all incoming timestamps in a list.
+      </p>
+      <p>On Arduino side:</p>
+      <p>On Python side:</p>
+      <img src="web_temp/images/Lab1/task5.png" alt="Task 5">
+      
+      <p>In 5 seconds, the PC received 142 messages. Therefore, the data rate is around 28 messages/second.</p>
+      <h4> Task 6. SEND_TIME_DATA </h4>
+      <p>
+        I first established a global array to store timestamps. The maximum length of the stamp array was set to 1000. 
+        When the board received SEND_TIME_DATA command, it collected timestamps for 5 seconds and stored them in the array. I added another checking condition to avoid array over fill. After that, the board sent each data in the array one by one to the PC. The notification handler for this task is the same as the one for task 5.
+      </p>
+      <p>On Arduino side:</p>
+      <p>On Python side:</p>
+      <img src="web_temp/images/Lab1/task6.png" alt="Task 6">
+      
+      <p>Under this method, the board can send 1000 messages, which is much more than task 5 method.</p>
+      <h4> Task 7. GET_TEMP_READINGS  </h4>
+      <p>
+        Similar to Task 6, the board needs to record both temperature and timestamps into arrays and send them to the PC. A new global array for temperature was declared next to the global time array. Also, the notification handler was updated to extract both information and store them in two lists. 
+
+      </p>
+
+      <p>On Arduino side:</p>
+      <p>On Python side:</p>
+      <img src="web_temp/images/Lab1/task7.png" alt="Task 7">
+      
+      <h4> Task 8: Discussion </h4>
+      <p>
+        Task 5 is a synchronized method that sends the current time immediately after collecting it. While this method allows real-time feedback, its data rate is slow and it competes with the control function, potentially causing frequent interruptions, which is undesirable when control is critical.
+      </p>
+      <p>
+        Tasks 6 and 7 use a non-synchronized method. While this method doesn't provide real-time data, it offers faster data rates and less frequent interruptions. However, it occupies RAM, so array overflow must be avoided. This method is useful when data is needed for analysis afterwards.
+      </p>
+      <p>To test the recording speed of the second method, I changed the record time from 5 seconds to 1 second and increased the array size to 5000. After rerunning the GET_TEMP_READINGS command, I collected 2253*2 = 4506 data points per second.</p>
+      <img src="web_temp/images/Lab1/task7_dis.png" alt="Task 7_dis">
+      
+      <p>If each data is 4 bytes, RAM can contain 96000 data points. Also, some local variables may need some number of bytes in RAM. Therefore, the board can store fewer than 96000 data points. 
+
+      </p>
+
+        
+      <h4> Additional Task: Data Rate </h4>
+      <p>
+        I implemented two commands to test data rates. The first, TEST_DATARATE, sends a string message of a specified length (provided via the command line). The board records the time difference before and after sending the message to the PC,
+         and then sends the communication time. This avoids including the string construction time. The second command, TEST_DATARATE_2, sends a 240-byte string in several chunks, with the communication time also recorded on the Arduino side.
+      </p>
+      
+      <p>
+        TEST_DATARATE
+      <p>Data rate for 5-byte:  37878.78787878787 byte/s</p>
+      <p>Data rate for 120-byte:  530973.4513274337 byte/s</p>
+
+      </p>
+      <img src="web_temp/images/Lab1/datarate.png" alt="Data Rate 1">
+      <img src="web_temp/images/Lab1/image1.png" alt="Data Rate 1 out">
+      
+      <p>
+        TEST_DATARATE_2
+      </p>
+      <img src="web_temp/images/Lab1/dataraye2.png" alt="Data Rate 2">
+      <img src="web_temp/images/Lab1/image13.png" alt="Data Rate 2 output">
+
+      <p> 
+        From the results of the two commands, we can see that longer messages have a higher data rate, while shorter messages have a lower data rate. Although the overhead for longer messages is larger, averaging the overhead per byte results in a lower value.
+      </p>
+      
+      <h4> Additional Task: Reliability</h4>
+      <p>
+        To test if the PC receives all messages correctly and only once, I implemented the TEST_RELIABILITY command. In addition to sending a 140-byte pure string, I appended an index value to each message for differentiation. In the Python code,
+         I split the received string, verified the correctness of the pure string, and recorded the indices in a list. Finally, I checked the list's size and for any repeated values.
+      </p>
+      <p>On Arduino side:</p>
+      <p>On Python side:</p>
+      <p>As the result, the PC received all 1000 messages correctly.</p>
+      <h4> Discussion </h4>
+      <p>Overall, Lab 1 offered an invaluable insight into Bluetooth communication, and reminded me to think about the efficient and appropriate method to send data in different scenarios.
+      </p>
+    </div>
+  </div>
+
+  <script src="web_temp/js/jquery.min.js"></script>
+  <script src="web_temp/js/popper.js"></script>
+  <script src="web_temp/js/bootstrap.min.js"></script>
+  <script src="web_temp/js/main.js"></script>
+</body>
+
+</html>

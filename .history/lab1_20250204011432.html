@@ -143,10 +143,112 @@
           </div>
         </div>
       </nav>
+      
+      <!-- Paragraph Starts ! -->
+      <h1 class="mb-4">Lab 1: Artemis Board & Blutooth</h1>
+      <h4> Introduction </h4>
+      <p>The first part of this lab was to set up 
+        and familiarize ourselves with the Arduino IDE and Artemis board. It involved running sample scripts about Serial Monitor, temperature sensors, and microphone. The second part was to establish Bluetooth communication between our laptops and the Artemis board. The laptop would send Python commands from Jupyter notebook 
+        to an Artemis board running in Arduino.</p>
+      
+      <h2> Lab 1a </h2>
+      <h4> Prelab </h4>
+      <p>
+        Before the lab, I installed the latest version of Arduino IDE (2.3.4) and Sparkfun Apollo 3 
+        Boards (2.2.1) in Board Manager.
+      </p>
+      <h4> Blink </h4>
+      <p>
+        Similar to how "Hello World" is the first program run in many programming languages, the Blink LED example is often the first script executed on a microcontroller.
+         After running the Blink.ino script, the LED on the board blinked as expected.
+      </p>
+      <h4> Example4_Serial </h4>
+      <p>
+        Next, I ran the example program to test serial communication. It is important that the baud rate in
+         both the Arduino code and the serial monitor match, or else strange characters may appear. I set both to 115200. 
+         The program first printed 11 messages, then prompted for user input. After typing words in the input window, 
+        the program read and echoed them in the output window, as shown in the video.
+      </p>
+      <h4> Example2_analogRead </h4>
+      <p>
+        Next, I ran the example program to test the temperature sensor. The program used the internal ADC and the analogRead
+        function to read data from the onboard temperature sensor. When I touched the board, the temperature displayed on the serial monitor increased.
+      </p>
+      <h4> Example1_MicrophoneOutput  </h4>
+      <p>
+        The final sample script demonstrated how to use the pulse density microphone on the board. The program output the sound frequency. 
+        The video below shows the audio frequency output for different input sound frequencies 
+      </p>
+      <h4> Musical C Note Control Blink</h4>
+      <p>
+        The task was to control the LED blink based on a musical C note. When the microphone detects a C note, the LED should blink; otherwise, it remains off.
+         I first used a YouTube video containing a single C note to test the frequency, which should be 263 Hz. 
+        Then, I added an if statement to the end of the printLoudest() function to control the LED blink. When the C note is detected, the LED blinks at 1 Hz.
+      </p>
 
-      <h1 class="mb-4">ECE5160: Fast Robots</h1>
-      <p>Hi! I'm Chengle, an ECE M.Eng student at Cornell. 
-      This website serves as an online portfolio for the work completed during ECE5160 Fast Robots.</p>
+
+      <h2> Lab 1b </h2>
+    
+      <h4> Prelab </h4>
+      <p>
+        Before Lab 1B, we needed to set up Python, a virtual environment, necessary packages, and download the lab's codebase. I encountered some issues when upgrading Python.
+         The proper procedure is to first uninstall the old version from Settings -> Apps, then install the latest version. Installing the new Python version automatically upgrades pip.
+          It's important to use the Command Line Interface (CLI) to check the version, as git bash and PowerShell may provide incorrect outputs. Since I previously used the Anaconda environment, both git bash and PowerShell showed the wrong Python version
+      </p>
+      <p>
+        Next, we set up the Artemis Board by installing the ArduinoBLE library and uploading the ble_arduino.ino script. After matching the baud rate in the script and the Serial monitor, I successfully received the MAC address.
+      </p>
+      <h4> Configuration </h4>
+      <p>
+        
+      </p>
+      <h4> Task 1. ECHO </h4>
+      <p>
+        
+      </p>
+      <h4> Task 2. SEND_THREE_FLOATS </h4>
+      <p>
+        
+      </p>
+      <h4> Task 3. GET_TIME_MILLIS </h4>
+      <p>
+        
+      </p>
+      <h4> Task 4. Notification Handler </h4>
+      <p>
+        
+      </p>
+      <h4> Task 5. GET_TIME_MILLIS in a loop </h4>
+      <p>
+        
+      </p>
+      <h4> Task 6. SEND_TIME_DATA </h4>
+      <p>
+        
+      </p>
+      <h4> Task 7. GET_TEMP_READINGS  </h4>
+      <p>
+        
+      </p>
+      <h4> Task 8: Discussion </h4>
+      <p>
+        
+      </p>
+      <h4> Additional Task: Data Rate </h4>
+      <p>
+        
+      </p>
+      <h4> Additional Task: Reliability</h4>
+      <p>
+        
+      </p>
+      <p>
+        
+      </p>
+
+
+      <p> 
+      </p>
         
     </div>
   </div>
